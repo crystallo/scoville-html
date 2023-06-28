@@ -99,6 +99,8 @@ h1 {
     padding: 10px 15px;
     color: #333;
     margin-left: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .menu-item:hover {
@@ -145,7 +147,7 @@ h1 {
 }
 
 .hero > .background > img {
-    translate: 20%;
+    translate: translateX(20%);
 }
 
 .hero-title {
