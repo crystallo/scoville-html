@@ -1,0 +1,414 @@
+:root {
+    --dark-bg-color: #2b2b2b;
+    --title-color: #f74636;
+    --title-font: 'IBM Plex Mono', monospace;
+    --mono-font: 'IBM Plex Mono', monospace;
+    --medium-bg-color: #f8f8f8;
+    --accent-color: #f74636;
+    --light-font-color: #979797;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+div {
+    border: 0px solid blue;
+}
+
+section {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+.dark-bg {
+    background-color: var(--dark-bg-color);
+    color: #fff;
+}
+
+.medium-bg {
+    background-color: var(--medium-bg-color);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title{
+    font-family: var(--title-font);
+    color: #a9a9a9;
+    padding: 0 10px;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.language {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    padding: 10px 15px;
+    color: #333;
+    margin-left: 15px;
+}
+
+.menu-item:hover {
+    color: #ff0000;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0, 0.7, 0.22, 1 );
+}
+
+.menu-button {
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #ff0000, #ffc49a);
+    width: 140px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+.menu-button:hover {
+    background: #fff;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0, 0.7, 0.22, 1 );
+}
+
+.title {
+    font-family: var(--title-font);
+    color: #f74636;
+}
+
+.hero {
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.hero > .background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero > .background > img {
+    translate: 20%;
+}
+
+.hero-title {
+    font-size: .9rem;
+}
+
+.hero-text {
+    font-size: 1rem;
+    max-width: calc(100% - 600px);
+    z-index: 0;
+    padding: 0 0 0 100px;
+}
+
+.hero-text > p {
+    line-height: 1.5;
+}
+
+.hero-text > h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.cards {
+    margin: 150px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px #eee ;
+    border: .5px solid #eee;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-border {
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.core {
+    position: relative;
+    padding: 50px 80px;
+    font-family: var(--mono-font);
+    background: linear-gradient(90deg, #393939, #7d7d7d);
+    overflow: hidden;
+}
+
+.core > .background {
+    position: absolute;
+    top: -50px;
+    right: 200px;
+    width: 40%;
+}
+
+.core > .background:hover {
+    top: -55px;
+    right: 205px;
+    transition: 500ms;
+}
+
+.core > .background > img {
+    width: 100%;
+    opacity: 25%;
+}
+
+.core > .background > img:hover {
+    opacity: 60%;
+    width: 101%;
+    transition: 500ms;
+}
+
+.core > .text {
+    line-height: 1.5;
+}
+
+.core-1 {
+    margin: 0 0 50px;
+    font-weight: 300;
+}
+
+.core-2 {
+    font-size: 1.2rem;
+}
+
+.core-3 {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.service-header {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--mono-font);
+}
+
+.service-header-title {
+    margin: 0px;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.service-header-caption {
+    font-size: 2.3rem;
+    margin: 20px 0;
+}
+
+.title-decor {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    height: 5px;
+    width: 5px;
+    padding: 0;
+    margin: 200px 0 0;
+}
+
+.services {
+    display: flex;
+}
+
+.service {
+    margin: 50px;
+}
+
+.service-logo > img{
+    width: auto;
+    height: 200px;
+    align-content: center;
+    display: block;
+    margin: auto;
+}
+
+.arrow {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    width: 1px;
+    height: 60px;
+}
+
+.service-title {
+    font-size: 1.2rem;
+}
+
+.service-type {
+    font-size: 1.5rem;
+    font-family: var(--mono-font);
+    margin: 10px 0;
+}
+
+.service-text {
+    font-size: 1.1rem;
+    margin: 30px 0 0;
+    color: var(--light-font-color);
+    line-height: 1.5;
+}
+
+.service-cards {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--mono-font);
+}
+
+.service-large-card {
+    margin: auto 50px;
+    background: linear-gradient(90deg, #50c9c3, #c0e8a0);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 70px 50px;
+    border-radius: 20px;
+}
+
+.service-small-card {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 30px 50px;
+    box-shadow: 0px 5px 50px #eee;
+    border-radius: 20px;
+}
+
+.service-small-card > img {
+    width: 70%
+}
+
+.product-service-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.product-service-card {
+    width: 300px;
+    margin: 0 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px #eee;
+    font-family: var(--mono-font);
+    border-radius: 20px;
+}
+
+.prodcut-service-card-title {
+    display: flex;
+}
+
+.product-service-card-heading {
+    width: 100%;
+}
+
+.product-service-card-heading-type {
+    font-size: .8rem;
+    margin: 0 0 5px;
+}
+
+.product-service-card-heading-title {
+    color: #53b4fc;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.product-service-card-logo {
+    display: block;
+    margin: auto;
+}
+
+.product-service-card-logo-img {
+    opacity: 50%;
+    width: 40px;
+}
+
+.product-service-caption {
+    white-space: normal;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+footer {
+    padding: 0 50px;
+    font-family: var(--mono-font);
+}
+
+.footer-title {
+    padding: 80px 0;
+    font-weight: 600;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.row {
+    display: flex;
+}
+
+.table-title {
+    width: 150px;
+    color: #979797;
+    font-size: .9rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 30px;
+    font-size: .8rem;
+}
