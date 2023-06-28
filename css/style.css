@@ -47,7 +47,7 @@ h1 {
 .banner {
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 5;
 }
 
 .header-bar {
@@ -347,7 +347,6 @@ h1 {
 }
 
 .product-service-background {
-    z-index: -1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -359,6 +358,7 @@ h1 {
 }
 
 .product-service-cards {
+    z-index: 1;
     display: flex;
     overflow-x: auto;
     width: 95vw;
