@@ -1,9 +1,11 @@
 :root {
     --dark-bg-color: #2b2b2b;
+    --medium-bg-color: #f8f8f8;
+    --light-bg-color: #fff;
+
     --title-color: #f74636;
     --title-font: 'IBM Plex Mono', monospace;
     --mono-font: 'IBM Plex Mono', monospace;
-    --medium-bg-color: #f8f8f8;
     --accent-color: #f74636;
     --light-font-color: #979797;
 }
@@ -38,7 +40,17 @@ h1 {
     background-color: var(--medium-bg-color);
 }
 
+.light-bg {
+    background-color: var(--light-bg-color);
+}
+
 .banner {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.header-bar {
     display: flex;
     justify-content: space-between;
 }
@@ -327,18 +339,38 @@ h1 {
     width: 70%
 }
 
+.service-subsection {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.product-service-background {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #51abff, #65f0e8);
+    border-radius: 20px;
+    width: 45vw;
+    height: 500px;
+}
+
 .product-service-cards {
     display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    white-space: nowrap;
+    overflow-x: auto;
+    width: 95vw;
+    margin: auto;
 }
 
 .product-service-card {
-    width: 300px;
-    margin: 0 30px;
-    padding: 20px;
-    box-shadow: 0px 5px 10px #eee;
+    background-color: #fff;
+    min-width: 250px;
+    margin: auto 35px;
+    padding: 50px 30px;
+    box-shadow: 0px 3px 3px #ddd;
     font-family: var(--mono-font);
     border-radius: 20px;
 }
@@ -365,18 +397,19 @@ h1 {
 
 .product-service-card-logo {
     display: block;
-    margin: auto;
+    margin: auto 15px;
 }
 
 .product-service-card-logo-img {
     opacity: 50%;
-    width: 40px;
+    width: 35px;
 }
 
 .product-service-caption {
     white-space: normal;
     font-size: .8rem;
     font-weight: 300;
+    text-align: center;
 }
 
 footer {
